@@ -19,51 +19,44 @@
   />
     <title>ProductLandingPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="css/style.css">
     
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
-  
     <header id="header">
-      <img id="header-img" src="img/logo.png">
+      <div class="logo">
+        <img id="header-img" src="img/logo.png"> </img>
+      </div>
       <nav id="nav-bar">
         <ul>
-          <li > <a href="#" > Features</a></li>
+          <li>
+          <a  class="nav-link" href="#feature" > Features</a>
           </li>
           <li>
-            <li > <a href="#" >  How It Works</a></li>
+            <li>
+              <a class="nav-link" href="#description" >  How It Works</a>
           </li>
           <li>
-            <li > <a href="#" >  How It Works</a></li>
+
+            <li>
+               <a class="nav-link" href="#container1" >  Pricing</a>
           </li>
         </ul>
       </nav>
     </header>
-
-    
-      <h2> Handcrafted, home-made masterpieces</h2>
-    </div>
     <div>
-      <div class="headingone"></div>
-    <form id="form" action="">
-      
-     
+      <div class="headingone">
+        <h2> Handcrafted, home-made masterpieces</h2>
+      </div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
       <input name="email" id="email" type="email" placeholder="Enter your email address" required>
-      <button id="" type="button" > GET STARTED</button>
-  
+      <button type="submit" id="submit" value="GET STARTED">  GET STARTED</a></button>
     </form>
   </div>
   
   <div class="container">
-      <sectin id="section">
-        <div class="content">
+      <sectin id="feature">
+        <div class="content2">
           <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
           <div class="text"><h1>Premium Materials</h1>
             <p>
@@ -72,7 +65,7 @@
             </p>
           </div> 
         </div>
-        <div class="content">
+        <div class="content2">
           <div class="icon1"><i class="fa fa-3x fa-truck"></i></i></div>
           <div class="text1"><h1>
             Fast Shipping</h1>
@@ -83,7 +76,7 @@
           </div> 
           
         </div>
-        <div class="content">
+        <div class="content2">
           <div class="icon2"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
           <div class="text2"><h1>Quality Assurance</h1>
             <p>
@@ -95,29 +88,49 @@
         </div>
         
       </sectin>
-  </div>
-</section>
+      </div>
 <section id="description">
   <iframe
     id="video"
     height="315" width="500"
     src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-  
+    frameborder="0" allowfullscreen ></iframe>
 </section>
-<div class="flex-container">
-  <div>
-    <p>
-      Lorem ipsum.
-Lorem ipsum.
-Lorem ipsum dolor.
-Lorem ipsum.
-    </p>
-  </div>
-  
-</div>
+          <section id="container1">
+            <div class="content1" >
+              <div class="title">Tenor Trombone</div>
+              <h3>$600</h3>
+              <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ul>
+              <button class="button">SELECT</button>
+            </div>
+            <div class="content1">
+              <div class="title">Bass Trombone</div>
+              <h3>$900</h3>
+              <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="button">SELECT</button>
+            </div>
+            <div class="content1">
+              <div class="title">Valve Trombone</div>
+              <h3>$1200</h3>
+              <ol>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="button">SELECT</button>
+            </div>
+          </section>
     <div id="footer">
       <ul>
         <li>
@@ -133,6 +146,7 @@ Lorem ipsum.
       <p> Copyright 2016, Original Trombones</p>
     </div>
 
+    
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -148,5 +162,6 @@ Lorem ipsum.
 
     -->
     <script  src="js/index.js"></script>
+  
   </body>
 </html>

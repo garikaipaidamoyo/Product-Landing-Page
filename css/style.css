@@ -4,43 +4,49 @@
 body{
     font-family: 'Lato', sans-serif;
 }
-#header{
- 
- padding: 0;
- margin: 0;
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
 }
-#nav-bar{
-    margin-top: 10px;
-    margin-left: 10px;
-    
+.logo{
+    width: 60vw;
+    background-color: #eee;
 }
 #header-img{
-    margin-top: 10px;
-    width: 30%;
-    margin: auto;
-    margin-left: 10px;
+    margin: 20px;
+    width: 38%;
+   
+    background-color: #eee;
 }
+
 #nav-bar{
-  
-    margin-top: 10px;
-    margin-left: 60%;
-    
+margin-left: 0%;
+background-color: #eee;
+
 }
 #nav-bar ul {
-    list-style-type: none;
-    margin-top: -40px;
+    background-color: #eee;
+    margin-top: 0px;
+    list-style: none;
+    margin-left: 0%;
 }
 li{
     
-        display: inline;
+       display: inline;
         text-decoration: none;
         margin-top: 0%;
-        padding: 10px;
-    
+        padding: 0px;
+        margin: 0px;
       
 }
 li a{
-    display: inline;
+
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
@@ -50,33 +56,62 @@ li a{
 {
     margin-top: 30px;
     text-align: center;
-   
-
-
+ 
+}
+@media only screen and (max-width: 470px) {
+    .headingone, h2{
+    margin-top: 20px;
+    font-size: smaller;
+    text-align: center;
+    }
+    #email{
+     
+        width: 100px;
+        padding: 7px;
+        background-color: white;
+        border: 0.51px solid rgb(34, 33, 33);
+        font-weight: 400;
+    }
+    form{
+        width: 5%;
+        margin: auto;
+           
+       }
 }
 form{
- 
+ width: 30%;
+ margin: auto;
+    
+}
+.headingone{
+    margin-top:100px;
+   text-align: center;
 }
 
 #email{
     display: block;
-    width: 350px;
-    padding: 10px;
+    width: 300px;
+    padding: 7px;
     background-color: white;
-    border: none;
+    border: 0.51px solid rgb(34, 33, 33);
     font-weight: 400;
+}
+
+video{
+    margin-left: 30%;
 }
 #submit{
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-   margin-left: 35%;
+   margin-left: 15%;
    background-color: #f1c40f;
-   
+   cursor: pointer;
+   border: none;
   
 }
 
-.content{
+.content2{
     display: flex;
     padding: 10px;
     width: 70%;
@@ -86,8 +121,10 @@ form{
 .icon{
     padding-left: 20px;
     color: darkorange
+    
 }
 .text{
+   
     padding-left: 50px;
 }
 .icon1{
@@ -115,29 +152,79 @@ form{
 }
 #footer ul{
     background: #ddd;
-    margin-left: 70%;
+    margin-left: 73%;
 }
 #footer ul li{
     background: #ddd;
     
 }
 #footer p{
-    margin-left: 70%;
+    margin-left: 75%;
     background: #ddd;
+    font-size: 0.9em;
+    color: #444;
+  
     
 }
 #description{
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 200px;
+    margin-left: 400px;
+    margin-bottom: 2%;
+    
+    width: 300px;
     height:315px;
 }
-.flex-container{
-    border-radius: 1px solid #000;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 3px;
+#container1{
+    
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+    height: 400px;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 27%;
+    margin: 5px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    
+}
+.content1 > .title{
+    background-color: black;
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.content1 ul{
+    display: block;
+    list-style: none;
+    list-style-type: decimal;
+    margin-block-start: 0.2px;
+}
+.content1 li {
+    list-style: none;
+    display: list-item;
+    text-align: center
+    
+}
+.content1> button{
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f1c40f;
+    
+    cursor: pointer;
+    font-size: large;
+    margin-bottom: 20%;
+    font-weight: 100;
 }
 
